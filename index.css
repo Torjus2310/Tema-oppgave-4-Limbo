@@ -14,13 +14,31 @@ body {
     background-repeat: no-repeat;
     background-position-x: center;
     background-color: #1e1e1e;
-
-
+    
 }
+
 
 section {
     height: 100vh;
 }
+
+.side1 {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+}
+
+.sitat1{
+    transform:translateX(-363px);
+}
+.side2 {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+}
+
 
 .gutt {
     position: fixed;
@@ -33,7 +51,7 @@ section {
 }
 
 
-.limbotau {
+.limbotau  {
     position: absolute;
     width:900px;
     height:3840px;
@@ -41,25 +59,45 @@ section {
     left:50%;
     margin-top: -450px;
     margin-left:-480px;
+    z-index:-1;
 
 }
 
 
-.hover-for-bein {
+.hover-for-bein img{
     height: 200px;
     width: 200px;
-    float: right;
+    position:absolute;
+    right:0;
 }
 
-.hover-for-bein:hover .bein1 {
-    animation: bein1 5s 1s infinite ease-out alternate;
+.hover-for-bein img:nth-of-type(1){
+    top:-150px;
+}
+.hover-for-bein img:nth-of-type(2){
+    top:-50px;
+}
+.hover-for-bein img:nth-of-type(3){
+    top:50px;
 }
 
-.hover-for-bein:hover .bein2 {
+
+.hover-for-bein{
+    position:relative;
+    min-height:100vh;
+    min-width:100vw;
+    z-index:4;
+}
+
+.hover-for-bein:hover > .bein1 {
+    animation: bein1 5s infinite ease-out alternate;
+}
+
+.hover-for-bein:hover > .bein2 {
     animation: bein2 5s infinite ease-out;
 }
 
-.hover-for-bein:hover .bein3 {
+.hover-for-bein:hover > .bein3 {
     animation: bein3 5s infinite ease-out;
 }
 
