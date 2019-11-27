@@ -6,20 +6,25 @@ html {
 }
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
     background-image: url(./img/Limbo_bakgrunn.png);
     background-repeat: no-repeat;
     background-position-x: center;
-    background-color: #1e1e1e;
-    
+    background-color: #1e1e1e; 
+   
+}
+
+
+p {
+    font-size: 1,2rem;  
 }
 
 
 section {
-    height: 100vh;
+    height: 100vh;  
 }
 
 .side1 {
@@ -29,7 +34,7 @@ section {
     width:100vw;
 }
 
-.sitat1{
+.sitat1 {
     transform:translateX(-363px);
 }
 .side2 {
@@ -37,6 +42,29 @@ section {
     justify-content: center;
     align-items: center;
     width:100vw;
+}
+
+/* hjelp */
+.sitater {
+    line-height:1.6rem;
+    transform:translateX(280px);   
+}
+
+.side3 {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+}
+/* hjelp */
+.about {
+    
+    transform:translateX(250px);
+}
+
+span {
+    font-size:1.5rem;
+    line-height:4rem;
 }
 
 
@@ -61,6 +89,13 @@ section {
     margin-left:-480px;
     z-index:-1;
 
+}
+
+img.klippe {
+    height: 800px;
+    width:800px;
+    position:absolute;
+    left:-157px;
 }
 
 
