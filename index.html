@@ -6,6 +6,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <meta http-equiv='X-UA-Compatible' content='ie=edge'>
         <link rel='stylesheet' href='index.css'>
+        <link rel='stylesheet' href='index_small.css'>
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap" rel="stylesheet">
         <title>Limbo</title>
 </head>
@@ -13,22 +14,62 @@
 <body>
 
         <main>
-                <header>
+                <header class="stor">
                         <nav>
                                 <a href="https://playdead.com/"target=_blank>Playdead</a>
                                 <a href="#about" id="About">About</a>
                                 <a href="#trailer" id="Trailer">Trailer</a>
                                 <a href="#buy" id="Buy">Buy</a>
+                                <a href="#" id="Top">Top</a>
                         </nav>
                 </header>
+                        <header class="mobile">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" id="burger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </label>
+                    
+                          <nav class="menu">
+                                <a href="https://playdead.com/"target=_blank>Playdead</a>
+                                <a href="#about" id="About">About</a>
+                                <a href="#trailer" id="Trailer">Trailer</a>
+                                <a href="#buy" id="Buy">Buy</a>
+                                <a href="#" id="Top">Top</a>
+                          </nav>
+                    
+                          
+                              
+                          
+                          <script>
+                              document.querySelector('.menu').addEventListener('click', doStuff)
+                    
+                              function doStuff(){
+                                  document.querySelector('#checkbox').checked =false;
+                              }
+                          </script>
+                          </header>
+                
 
                 <section class="side1">
-
+                        <img  src="./img/Bare_limbo.svg" alt="mobile" class="mobile">
                         <img src="./img/SVG/Gutt.svg" alt="" class="gutt">
                         <img src="./img/SVG/Limbo_tau.svg" alt="" class="limbotau">
                         <div class="sitat1">
                               <p>“The game is a masterpiece.” </br>
                                 <a href="https://www.giantbomb.com/limbo/3030-30380/" target=_blank> <span class="anmelder"> Giant Bomb</span></a> </p>
+                                <p class=mobile>
+                                        “Limbo is genius. Freaky, weird genius. Disturbing,</br> uncomfortable genius.”
+                                        </br>
+                                        <a href="http://www.escapistmagazine.com/articles/view/video-games/editorials/reviews/7900-Review-Limbo"target=_blank><span class="anmelder"> The Escapist</br></span></a></p>
+                                <p class=mobile>
+                                        “Dark, disturbing, yet eerily beautiful, Limbo is a</br> world that deserves to
+                                        be explored.”</br>
+                                        <a href="https://www.engadget.com/2010/07/19/review-limbo/"target=_blank><span class="anmelder">Joystiq</span></a> </br></p>
+                                <p class=mobile>
+                                        “Limbo is as close to perfect at what it does as a </br> game can get.”</br>
+                                        <a href="https://www.destructoid.com/review-limbo-179246.phtml"target=_blank><span class="anmelder">Destructoid</span></a></br></p>
                         </div>
 
                 </section>
@@ -63,17 +104,17 @@
                 <section id=trailer class="side4"> 
                         
 
-                                <iframe  width="560" height="315" src="https://www.youtube.com/embed/Y4HSyVXKYz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                <iframe   width="560" height="315" src="https://www.youtube.com/embed/Y4HSyVXKYz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                                 </iframe>
 
-                                <p class="playdead"> <span>Playdead</span> </br>Playdead is an independent game developer and publisher based in Copenhagen, Denmark. The company was founded in 2006 by game designer Arnt Jensen. Since then, they have made LIMBO and INSIDE. Today, they are a team of 40 creative professionals, coming from a broad range of experience and education.</p>
+                               <p class="playdead"> <span>Playdead</span> </br>Playdead is an independent game developer and publisher based in Copenhagen, Denmark. The company was founded in 2006 by game designer Arnt Jensen. Since then, they have made LIMBO and INSIDE. Today, they are a team of 40 creative professionals, coming from a broad range of experience and education.</p>
                         
                 </section>
 
-                <section id=buy class="side5">
+                <section  class="side5">
                         
-                                <p>Buy Limbo:</p>
-                        <div class="logos">
+                                
+                        <div id=buy class="logos"><p>Buy Limbo:</p>
                                <a href="https://www.nintendo.co.uk/Games/Nintendo-Switch-download-software/LIMBO-1395414.html"target="_blank"> <img src="./img/Logos/SVG/nintendo.svg" alt="Nintendo-logo"></a>
                         
                                 <a href="https://store.playstation.com/no-no/home/games#!/games/limbo/cid=EP2054-CUSA01369_00-PLAYDEADD11LIMBO" target="_blank"><img src="./img/Logos/SVG/Ps4.svg" alt="ps4-logo"></a>
